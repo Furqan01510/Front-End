@@ -1,0 +1,20 @@
+p{
+	color: red;
+	font-size: 20px;
+	font-family: time now roman;
+}
+h4{
+	color:gray;
+	font-size: 30px;
+	font-family: arial;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.fontstyle{
+	font-size: 30px;n
+}
+.cursive{
+	font-family: cursive;
+}
+

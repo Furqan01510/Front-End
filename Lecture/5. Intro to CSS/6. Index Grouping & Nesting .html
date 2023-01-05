@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6. Index Grouping & Nesting </title>
+</head>
+
+	<style>
+	/*	Grouping the tags by using same property */
+	h1, p, a{
+		color: grey;
+		font-size: 30px;
+		font-family: Arial;
+	}
+	/*	Hovering the a tags	*/
+	a:hover {
+		color: orange;
+		
+		font-size: 50px;
+	}
+	/*	Nesting the tags by selecting perticular tag in container or targating main tags*/
+	div h1,p{
+		color: red;
+		font-size: 25;
+		font-family: time new roman;
+	}
+	div, p{
+		color: black;
+		font-size:20;
+	}
+
+	</style>
+
+<body>
+
+	<!-- Header -->
+	<header>
+		<h1>Grouping example - title Heading</h1>
+		<p>This is paragraph</p>
+		<a href="#"><p>This is paragraph</a></p>
+	</header>
+	<hr />
+	<!-- Div Section -->
+	<div>
+		<h1>Article Heading </h1>
+		<p>Font-family</p>
+	</div>
+
+
+</body>
+</html>

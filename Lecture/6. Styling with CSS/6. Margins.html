@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6. Margins</title>
+	<style>
+		html{
+			font-size: 30px;
+		}
+		#outer-div1{
+			height: 200px;
+			width: 200px;
+			background-color: darkblue;
+/*			margin: 5px 10px 20px 30px;*/
+/*			margin-top: 10px;*/
+			margin-bottom: 20px;
+		}
+		#inner-div1{
+			height: 50%;
+			width: 50%;
+			background-color: cyan;
+			margin: 15px;
+		}
+		#outer-div2{
+			height: 200px;
+			width: 200px;
+			background-color: orange;
+/*			margine-top: 10px;*/
+/*			margine-left: 10px;*/
+			margine: 10px 10px;
+		}
+		#outer-div3{
+			height: 200px;
+			width: 300px;
+			background-color: darkblue;
+			margin-left: 50px;
+		}
+		#inner-div2{
+			height: 50%;
+			width: 50%;
+			background-color: cyan;
+			margin: 10px;
+		}
+		#outer-div4{
+			height: 200px;
+			width: 300px;
+			background-color: orange;
+			margin-left: 50px;
+
+		}
+		#inner-div3{
+			height: 50%;
+			width: 50%;
+			background-color: cyan;
+			margin-left: 50px;
+			margin-top: 40px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- Margins -1 -->
+	<h1>Margins type -1</h1>
+	<div id="outer-div1"><div id="inner-div1"></div></div>
+	<div id="outer-div2"></div>
+	<!-- Margine -2 -->
+	<h1>Margins type -2</h1>
+	<div id="outer-div3"><div id="inner-div2"></div></div>
+	<div id="outer-div4"><div id="inner-div3"></div></div>
+</body>
+</html>

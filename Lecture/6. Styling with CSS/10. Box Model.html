@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>10. Box Mode</title>
+	<style>
+		#div-box1{
+			margin: 4px;
+			height: 200px;
+			width: 200px;
+			background-color: cyan;
+			border: 2px solid blue;
+			padding: 2px;
+			box-sizing: content-box; 
+/*			default box-sizing is content-box*/
+		}
+		#div-box2{
+			margin: 4px;
+			height: 200px;
+			width: 200px;
+			background-color: cyan;
+			border: 2px solid blue;
+			padding: 2px;
+			box-sizing: border-box; 
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Box Model</h1>
+	<!-- Content Box Model -->
+	<h2>Content Box Model - 1</h2>
+	<p>Total height/width = content + padding + border</p>
+	<div id="div-box1"></div>
+	<br />
+	<br />
+	<!-- Border-box model -->
+	<h2>Content Box Model - 1</h2>
+	<p>Total height/width = content + padding + border + margin</p>
+	<div id="div-box2"></div>
+
+</body>
+</html>

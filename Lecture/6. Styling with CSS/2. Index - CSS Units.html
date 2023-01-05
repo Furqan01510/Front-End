@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2. Index - CSS Units</title>
+	<style>
+		html{
+			font-size: 25px;
+		}
+		#div1{
+			height: 400px;
+			width: 600px;
+			background-color: red;
+		}
+		#inner-div1{
+			height: 50%;
+			width: 50%;
+			background-color: green;
+		}
+		#div2{
+			height: 7.5rem;
+			width: 5.5rem;
+			background-color: cyan;
+		}
+		#div3{
+			height: 50vh;
+			width:50vw;
+			background-color: yellow;
+		}
+		#inner-div2{
+			height: 10em;
+			width: 10em;
+			background-color: green;
+		}
+		#div4{
+			height: 40vmax;
+			width:60vmax;
+			background-color: purple;
+		}
+		#div5{
+			height: 40vmax;
+			width:60vmax;
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Units</h1>
+	<ol>
+		<li>Absolute</li>
+		<ul>
+			<li>Cm</li>
+			<li>inch</li>
+			<li>px</li>
+		</ul>
+		<li>Relative</li>
+		<ul>
+			<li>rem & em</li>
+			<li>ex & ch</li>
+			<li>vh & vw</li>
+			<li>vmax & vmin</li>
+		</ul>
+	</ol>
+	<!-- Div for unit height & Width -->
+	<div id="div1">
+		<!-- Innder Div -->
+		<div id="inner-div1"><p>using %</p></div><p>using px</p>
+	</div>
+	<!-- Div 2  -->
+	<div id="div2"><p>Using rem</p></div>
+	<!-- Div 3 -->
+	<div id="div3">
+		<div id="inner-div2"><p>Using em</p></div>
+		<p>Using vh & vw</p>
+	</div>
+	<div id="div4"><p>Using vmin </p></div>
+	<div id="div5"><p>Using vmax </p></div>
+</body>
+</html>

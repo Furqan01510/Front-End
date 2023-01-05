@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>5. Index - Specificity of selector</title>
+</head>
+	<style>
+		p{
+			color: black;
+			background-color: red;
+			font-family: time new roman;
+			font-size: 50px;
+			padding: 50px;
+			
+		}
+		#style-id{
+			padding: 200px;
+			text-transform: uppercase;
+			font-size: 20px;
+			background-color: white;
+			color: blue;
+		}
+		.style-class{
+		font-family: time new roman;
+		font-size: 50px;
+		}
+		#style-id{
+			padding: 20px;
+			background-color: orange;
+			color: red;
+		}
+		.style-class{
+			font-family: cursive;
+		}
+	</style>
+<body>
+
+	<h1 >Specificity of selector </h1>
+	<p style="color: white; font-size: 30px;" id="style-id" class="style-class">Paragraph - 1 : inline Css </p>
+	<p id="style-id" class="style-class">Paragraph - 2 : ID Css </p>
+	<p class="style-class">Paragraph - 3 : Class Css </p>
+	<p >Paragraph - 4 : Type Css </p>
+</body>
+</html>

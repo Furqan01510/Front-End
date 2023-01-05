@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>9. Position Property</title>
+	<style>
+		h1{
+			position: sticky;
+			top: 30px;
+			left: 30px;
+		}
+		#main-div{
+			height: 400vh;
+			width: 95vw;
+			margin: 20px;
+			border: 2px solid black;
+			position: relative;
+		}
+		#div1{
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			position: relative;
+			left: 200px;
+		}
+		#div2{
+			height: 200px;
+			width: 200px;
+			background-color: green;
+			position: absolute;
+			top: 0;
+		}
+		#div3{
+			height: 200px;
+			width: 200px;
+			background-color: blue;
+			position: absolute;
+			top: 200px;
+			left: 200px;
+		}
+		#div4{
+			display: inline-block;
+			vertical-align: top;
+			height: 200px;
+			width: 200px;
+			background-color: yellow;
+			
+			
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- Position Property -->
+	<h1>Position Property</h1>
+
+	<div id="main-div">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"></div>
+	</div>
+</body>
+</html>
