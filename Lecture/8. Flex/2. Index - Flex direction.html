@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2. Index - Flex direction</title>
+</head>
+	<style>
+		#container1{
+			height: 75vh;
+			widows: 75vw;
+			background-color: lightgrey;
+			display: flex;
+			flex-direction: row;
+		}
+		#container2{
+			height: 75vh;
+			widows: 75vw;
+			background-color: lightgrey;
+			display: flex;
+			flex-direction: row-reverse;		
+		}
+		#container3{
+			height: 75vh;
+			widows: 75vw;
+			background-color: lightgrey;
+			display: flex;
+			flex-direction: column;		
+		}
+		#container4{
+			height: 75vh;
+			widows: 75vw;
+			background-color: lightgrey;
+			display: flex;
+			flex-direction: column-reverse;		
+		}
+		#container1 div{
+			height: 200px;
+			width: 200px;
+		}
+		#container2 div{
+			height: 200px;
+			width: 200px;
+		}
+		#container3 div{
+			height: 200px;
+			width: 200px;
+		}
+		#container4 div{
+			height: 200px;
+			width: 200px;
+		}
+		#div1{
+			background-color: cyan;
+			order: 1;
+		}
+		#div2{
+			background-color: red;
+			order: 0;
+		}
+		#div3{
+			background-color: green;
+			order: 3;
+		}
+		#div4{
+			background-color: blue;
+			order: 2;
+		}
+	</style>
+<body>
+	<div id="container1">
+		<div id="div1">
+			Div 1
+		</div>
+		<div id="div2">
+			Div 2
+		</div>
+		<div id="div3">
+			Div 3
+		</div>
+		<div id="div4">
+			Div 4
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<div id="container2">
+		<div id="div1">
+			Div 1
+		</div>
+		<div id="div2">
+			Div 2
+		</div>
+		<div id="div3">
+			Div 3
+		</div>
+		<div id="div4">
+			Div 4
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<div id="container3">
+		<div id="div1">
+			Div 1
+		</div>
+		<div id="div2">
+			Div 2
+		</div>
+		<div id="div3">
+			Div 3
+		</div>
+		<div id="div4">
+			Div 4
+		</div>
+	</div>
+	<br />
+	<br />
+	<br />
+	<br />
+	<div id="container4">
+		<div id="div1">
+			Div 1
+		</div>
+		<div id="div2">
+			Div 2
+		</div>
+		<div id="div3">
+			Div 3
+		</div>
+		<div id="div4">
+			Div 4
+		</div>
+	</div>
+</body>
+</html>

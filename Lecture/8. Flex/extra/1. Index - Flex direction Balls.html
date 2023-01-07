@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>1. Index - Flex Balls</title>
+
+	<style>
+		#box{
+			height: 330px;
+			width: 330px;
+			background-color: #ffffff;
+			margin: 100px auto;
+			border: 1px solid black;
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		#box div{
+			border-radius: 50%;
+			border: 1px solid lightgrey;
+			box-sizing: border-box;
+		}
+		
+		#ball1 {
+	    height: 30px;
+	    width: 30px;
+	    background-color: #ff9bc9;
+	    order: 4;
+		}
+		#ball2 {
+		    height: 40px;
+		    width: 40px;
+		    background-color: #df8eff;
+		    order: 0;
+		}
+		#ball3 {
+		    height: 50px;
+		    width: 50px;
+		    background-color: #91dcff;
+		    order: 2;
+		}
+		#ball4 {
+		    height: 60px;
+		    width: 60px;
+		    background-color: #93ff99;
+			order: 0;
+		}
+		#ball5 {
+	    height: 70px;
+	    width: 70px;
+	    background-color: #dfff89;
+	    order: 2;
+		}
+
+		#ball6 {
+		    height: 80px;
+		    width: 80px;
+		    background-color: #ffdf8e;
+		    order: 1;
+		    
+		}
+
+
+	</style>
+</head>
+<body>
+
+    <div id="box">
+        <div id="ball1"></div>
+        <div id="ball2"></div>
+        <div id="ball3"></div>
+        <div id="ball4"></div>
+        <div id="ball5"></div>
+        <div id="ball6"></div>
+    </div>
+
+
+</body>
+</html>
