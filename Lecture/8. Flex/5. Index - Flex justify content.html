@@ -4,8 +4,123 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>5. Index - Flex justify content</title>
+	<style>
+/*		containers 1-5*/
+		#container1{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		#container2{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+		#container3{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		#container4{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		#container5{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-between;
+		}
+
+/*		continer(root element) div(child element)*/
+		#container1 div, #container2 div, #container3 div, #container4 div, #container5 div{
+			height: 100px;
+			width: 100px;
+		}
+/*		all boxes color*/
+		#box1{
+			background-color: red;
+		}
+		#box2{
+			background-color: green;
+		}
+		#box3{
+			background-color: blue;
+		}
+	</style>
+
 </head>
 <body>
+	<!-- flex justify content -->
+	<h1>flex</h1>
+	<h1>justify-content:</h1>
+	<ol>
+		<li>flex-start</li>
+		<li>flex-end</li>
+		<li>center</li>
+		<li>space-around</li>
+		<li>space-between</li>
+	</ol>
+	<br />
+	<p>Flex justify-content work on main axis (horizontally)</p>
+	<br />
+	<br />
+	<h2>justify-content: flex-start;</h2>
+	<div id="container1">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<br />
+	<br />
+	<h2>justify-content: flex-end;</h2>
+	<div id="container2">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<br />
+	<br />
+	<h2>justify-content: center;</h2>
+	<div id="container3">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<br />
+	<br />
+	<h2>justify-content: space=around;</h2>
+	<div id="container4">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<h2>justify-content: space=between;</h2>
+	<div id="container5">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
 
 </body>
 </html>

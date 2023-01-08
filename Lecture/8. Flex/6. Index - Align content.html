@@ -4,8 +4,127 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>6. Index - Align content</title>
+	<style>
+/*		containers 1-5*/
+		#container1{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+		#container2{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}
+		#container3{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		#container4{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: baseline;
+		}
+		#container5{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-between;
+			align-items: stretch;
+		}
+
+/*		continer(root element) div(child element)*/
+		#container1 div, #container2 div, #container3 div, #container4 div, #container5 div{
+			height: 100px;
+			width: 100px;
+		}
+/*		all boxes color*/
+		#box1{
+			background-color: red;
+		}
+		#box2{
+			background-color: green;
+		}
+		#box3{
+			background-color: blue;
+		}
+	</style>
+
 </head>
 <body>
+		<h1>flex</h1>
+	<h1>align-items:</h1>
+	<ol>
+		<li>flex-start</li>
+		<li>flex-end</li>
+		<li>center</li>
+		<li>baseline</li>
+		<li>stretch</li>
+	</ol>
+	<br />
+	<p>Flex align-items work on corss axis (vertically)</p>
+	<br />
+	<br />
+	<h2>align-items: flex-start;</h2>
+	<div id="container1">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<br />
+	<br />
+	<h2>align-items: flex-end;</h2>
+	<div id="container2">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<br />
+	<br />
+	<h2>align-items: center;</h2>
+	<div id="container3">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<br />
+	<br />
+	<h2>align-items: baseline;</h2>
+	<div id="container4">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
+	<h2>align-items: stretch;</h2>
+	<div id="container5">
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+	</div>
 
 </body>
 </html>

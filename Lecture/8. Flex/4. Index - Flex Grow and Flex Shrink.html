@@ -4,8 +4,61 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>4. Index - Flex Grow and Flex Shrink</title>
+	<style>
+/*		containers*/
+		#container1{
+			height: 500px;
+			width: 500px;
+			background-color: lightgray;
+			display: flex;
+		}
+		#container2{
+			height: 500px;
+			width: 300px;
+			background-color: lightgray;
+			display: flex;
+		}
+/*		container divs*/
+		#container1 div, #container2 div{
+			height: 200px;
+			width: 200px;
+		}
+/*		container boxes*/
+		#c1-b1{
+			background-color: cyan;
+			flex-grow: 4;
+		}
+		#c1-b2{
+			background-color: red;
+			flex-grow: 1;
+		}
+		#c2-b1{
+			background-color: cyan;
+			flex-shrink: 4;
+		}
+		#c2-b2{
+			background-color: red;
+			flex-shrink: 1;
+		}
+
+	</style>
+
 </head>
 <body>
+	<h1> flex-grow & flex-shrink </h1>
+	<br />
+	<h4><b>flex-grow:4 & flex-grow:1</b></h4>
+	<div id="container1">
+		<div id="c1-b1"></div>
+		<div id="c1-b2"></div>	
+	</div>
+	<br />
+	<br />
+	<h4><b>flex-grow:4 & flex-grow:1</b></h4>
+	<div id="container2">
+		<div id="c2-b1"></div>
+		<div id="c2-b2"></div>	
+	</div>
 
 </body>
 </html>
