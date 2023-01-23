@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4. Index - lightbox Animation</title>
+	<style type="text/css">
+		#lightbox {
+		    position: fixed;
+		    top: 0px;
+		    left: 0px;
+		    width: 0px;
+		    height: 0px;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    transition: all 2s ease-in-out;
+		}
+
+		#content-box {
+		    height: 30%;
+		    width: 30%;
+		    background-color: lightgrey;
+		    overflow: hidden;
+		}
+
+		#lightbox:target {
+		    height: 100%;
+		    width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="lightbox-switch">
+       <a href="#lightbox"> LightBox</a>
+	</div>
+    <div id="lightbox">
+        <div id="content-box">
+            <a href="#"> X </a>
+            <p>
+                Some Content
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
