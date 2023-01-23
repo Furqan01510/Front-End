@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6. Create Responsive Layout</title>
+	<style type="text/css">
+		h1{
+			font-family: time new roman;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: underline;
+		}
+
+		/*	Responsive div Common class	*/
+		.resp{
+			width: 32%;
+			height: 300px;
+			margin: 1px;
+			display: inline-block;
+		}
+		/*		Media Screen*/
+		@media only screen and (max-width: 600px){
+			.resp{
+				width: 100%;
+				display: block;
+				margin: 0px;
+			}
+		}
+
+		/*		Colors */
+		.color-1{
+			background-color: #ff8989;
+		}
+		.color-2{
+			background-color: #88f7ce;
+		}
+		.color-3{
+			background-color: #e29df2;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Creating Responsive Design</h1>
+
+		<div class="resp color-1"></div>
+		<div class="resp color-2"></div>
+		<div class="resp color-3"></div>
+
+
+</body>
+</html>
