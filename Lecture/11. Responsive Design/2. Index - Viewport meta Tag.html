@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- meta name="viewport" content="width=device-width, initial-scale=1" -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2. Index - Viewport meta Tag</title>
+	<style type="text/css">
+		html{
+			font-size: 30px;
+		}
+		#div1{
+			width: 1500px;
+			margin: 5px;
+			border: 1px solid black;
+		}
+		#div2{
+			width: 60%;
+			margin: 5px;
+			border: 1px solid black;
+		}
+		#div3{
+			
+			margin: 5px;
+			border: 1px solid black;
+		}
+		#div3>p{
+			font-size: 0.8em;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="div1">
+		<p>what is fixed layout
+		A fixed layout, also known as a fixed-width layout, is a type of layout in which the width of the web page is fixed and does not change regardless of the size of the user's screen or device. The elements on the page are positioned and sized based on fixed units such as pixels, and they will not adjust to the size of the viewport.
+
+		This type of layout is commonly used for web pages that require a specific design, such as online portfolios, landing pages, and personal websites. The use of fixed layout is less common in modern web development due to the rise of responsive web design, which allows web pages to adjust to the size of the viewport and provide a better user experience on different devices.
+
+		Fixed layout can also be achieved using CSS position: fixed property. This property will position an element relative to the browser window, and it will not move even if the page is scrolled. This can be useful for creating elements such as header and footer that stay in the same position on the page regardless of the scrolling.
+
+		It's worth noting that fixed layout can cause some accessibility issues and it's not recommended to use it on main content of the website because it can cause horizontal scrolling on small screens and inconvenience for users.</p>
+	</div>
+
+	<div id="div2">
+		<p>A fluid layout, also known as a flexible or liquid layout, is a type of layout in which the width of the web page adjusts to the size of the user's screen or device. The elements on the page are positioned and sized based on relative units such as percentages, which allows them to adjust to the size of the viewport.
+
+		This type of layout is commonly used for web pages that need to be responsive to different devices and screen sizes. It allows for a more flexible and adaptable design that can provide a better user experience on different devices.
+
+		Fluid layout can be achieved using CSS width property with percentage values. This allows elements to adjust their width relative to the size of the parent element. For example, an element with a width of 50% will always take up half the width of its parent element.
+
+		Fluid layout can also be combined with media queries to adjust the layout based on different screen sizes. Media queries allow you to change styles based on the characteristics of the device, such as screen size or resolution. This allows you to create a responsive design that adapts to different screen sizes.
+
+		It's worth noting that fluid layout is considered as a good practice in modern web development as it provides a better user experience on different devices and screen sizes and helps to create responsive web pages.</p>
+	</div>
+
+	<div id="div3">
+		<p>An elastic layout, also known as a flexible or relative layout, is a type of layout in which the width and font size of the web page adjusts to the size of the user's screen or device. The elements on the page are positioned and sized based on relative units such as em, which allows them to adjust to the size of the viewport.
+
+		This type of layout is similar to a fluid layout, but it also adjusts the font size based on the user's screen size. It allows for a more flexible and adaptable design that can provide a better user experience on different devices.
+
+		An elastic layout can be achieved using CSS width and font-size properties with relative units such as em or rem. These units are relative to the font size of the parent element, which allows elements to adjust their width and font size based on the size of the parent element.
+
+		For example, an element with a width of 50% and a font-size of 1.2em will always take up half the width of its parent element and the font size will be 20% larger than the parent's font-size.
+
+		It's worth noting that elastic layout is not commonly used in modern web development, as it has some limitations and it can cause issues with readability and accessibility on small screens. Also, it's not easy to maintain and test.</p>
+	</div>
+
+</body>
+</html>
