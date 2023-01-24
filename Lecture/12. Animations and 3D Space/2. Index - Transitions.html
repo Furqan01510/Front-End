@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2. Index - Transitions</title>
+	<style type="text/css">
+		.box{
+			background-color: aquamarine;
+		}
+		.transition1{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			transition: 1s ease-in-out;
+		}
+		.transition2{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 10%;
+			left: 30%;
+			transition: all 1s ease-in-out;
+		}
+		.transition3{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transition: height 1s ease-in-out;
+		}
+		.transition4{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 10%;
+			left: 70%;
+			transition: height 1s ease-in-out 0.5s;
+		}
+
+/*		Common property for all div*/
+		div:hover{
+			height: 400px;
+			width: 400px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="box transition1 "></div>
+	<div class="box transition2"></div>
+	<div class="box transition3"></div>
+	<div class="box transition4"></div>
+</body>
+</html>

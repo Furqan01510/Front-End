@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3. Index - A simple Animation</title>
+	<style type="text/css">
+		.transition1{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+
+			background-color: aquamarine;
+			transition: all 0.5s ease-in-out;
+		}
+		.transition2{
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 40%;
+			left: 10%;
+
+			background-color: aquamarine;
+			transition: 1s steps(10,end);
+		}
+		div:hover{
+			transform: scale(1.5) translate(150px);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="transition1"></div>
+	<div class="transition2"></div>
+</body>
+</html>
