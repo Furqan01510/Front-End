@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>10. Building Cube</title>
+	<style type="text/css">
+		@keyframes rotateCube{
+			
+			0%{
+				transform: rotate3d(360, 180, 180, 360deg) translateZ(100px) translateY(100px);
+			}
+
+		}
+		.cube{
+			height: 200px;
+			width: 200px;
+			position: relative;
+			margin: 900px;
+			transform-style: preserve-3d;
+			perspective: 10000px;
+			transition: all 2s;
+/*			transform: rotateX(25deg) rotateY(-25deg);*/
+			animation: rotateCube 2s ease-in-out infinite alternate 2s;
+		}
+
+/*		.cube:hover{
+			transform: rotate3d(360, 180, 180, 360deg) translateZ(300px) translateY(300px);
+		}*/
+		.face{
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			transition: all 1s;
+		}
+		.one{
+			background-color: skyblue;		
+		}
+		.two{
+			background-color: orange;
+			transform: rotateY(90deg) translateX(-100px) translateZ(-100px) ;
+		}
+		.three{
+			background-color: palevioletred;
+			transform: rotateY(-90deg) translateZ(-100px) translateX(100px);
+		}
+		.four{
+			background-color: brown;
+			transform: rotateX(90deg) translateY(100px) translateZ(100px);
+		}
+		.five{
+			background-color: green;
+			transform: rotateX(90deg) translateZ(-100px) translateY(100px);
+		}
+		.six{
+			background-color: blueviolet;
+			transform: translateZ(200px);
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="cube">
+		<div class="face one"></div>
+		<div class="face two"></div>
+		<div class="face three"></div>
+		<div class="face four"></div>
+		<div class="face five"></div>
+		<div class="face six"></div>
+	</div>
+
+</body>
+</html>
