@@ -5,7 +5,7 @@ function propertyExists(obj,path) {
     // Write logic here
   let currentObj = obj;
   for (let i in path) {
-    if (currentObj[apath[i]] != undefined) {
+    if (currentObj[path[i]] != undefined) {
       currentObj = currentObj[path[i]];
     } else {
       return false
